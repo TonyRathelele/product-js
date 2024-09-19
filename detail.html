@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+         <!-- Header -->
+         <header id="header" class="header">
+          <div class="navigation">
+            <div class="container">
+              <nav class="nav">
+                <div class="nav__hamburger">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                  </svg>
+                </div>
+      
+                <div class="nav__logo">
+                  <a href="index.html" class="scroll-link">
+                    Tony Shop
+                  </a>
+                </div>
+      
+                <div class="nav__menu">
+                  <div class="menu__top">
+                    <span class="nav__category">Tony</span>
+                    <a href="#" class="close__toggle">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="index.html" class="nav__link scroll-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link scroll-link">Product</a>
+                    </li>
+
+                    <li class="nav__item">
+                      <a href="#" class="nav__link scroll-link">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="nav__icons">
+      
+      
+      
+                  <a class="icon__item" onclick="toggleCart()">
+                    <svg class="icon__cart">
+                      <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                    </svg>
+                    <span id="cart__total">0</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          
+        </header>
+        <!-- End Header -->
+
+     
+            
+
+    <div class="container">
+        <div class="title">PRODUCT DETAIL</div>
+        <div class="detail">
+            <div class="image">
+                <img src="" alt="Product Image">
+            </div>
+            <div class="content">
+                <h1 class="name"></h1>
+                <div class="price"></div>
+                <div class="buttons">
+                    <button class="check_btn"><a href="#">Check Out</a></button>
+                    <button class="cart_add">Add To Cart 
+                        <span>
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                            </svg>
+                        </span>
+                        <div id="cart__total"></div>
+                    </button>
+                </div>
+                <div class="description"></div>
+                <br>
+                <div class="quantity" style="color: green;"></div><br>
+                <div class="color"></div>
+                <div class="style">Style: FB8622-010</div>
+            </div>
+        </div>
+
+        <div class="title">Similar product</div>
+        <div class="listProduct"></div>
+    </div>
+    <br>
+
+
+        <!-- Sidebar Cart -->
+        <div id="sidebarCart" class="cart-sidebar">
+          <div class="cart-header">
+              <h2>Cart</h2>
+              <button onclick="toggleCart()">X</button>
+          </div>
+
+          <hr style="margin-bottom: 5px;">
+
+          <div id="cartItems" class="cart-items"></div>
+          
+          <div class="cart-summary">
+              <div class="cart-summary-item">
+                  <span>Subtotal</span>
+                  <span id="cartSubtotal">R 0</span>
+              </div>
+              <div class="cart-summary-item">
+                  <span>Discounts</span>
+                  <span id="cartDiscounts">R 0</span>
+              </div>
+              <div class="cart-summary-item">
+                  <span>Total</span>
+                  <span id="cartTotal">R 0</span>
+              </div>
+              <button id="checkout-button" class="checkout-button">Checkout</button>
+    
+          </div>
+      </div>
+      
+      
+      
+    
+        <!-- End of Sidebar Cart -->
+
+
+           <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            Winnie Mandela, Alfred Nzo street, 1632 
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            tonyrathelele@gmail.com
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            +27 072 630 9462
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            Gauteng, SA
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/details.js">
+
+    </script>
+
+    <!--stripe-->
+    <script src="https://js.stripe.com/v3/"></script>
+
+
+</body>
+</html>
