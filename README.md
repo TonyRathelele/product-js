@@ -1,3 +1,3 @@
 # product-js
 
-###a javascript add tp cart 
+###a javascript add to cart 
